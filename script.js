@@ -17,7 +17,7 @@ notifyBtn.addEventListener('click', () => {
 });
 
 function registerServiceWorker() {
-    return navigator.serviceWorker.register('apisite/service-worker.js')
+    return navigator.serviceWorker.register('./service-worker.js')
         .then(registration => {
             return registration.pushManager.subscribe({
                 userVisibleOnly: true,
